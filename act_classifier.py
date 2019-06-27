@@ -223,7 +223,7 @@ class DAModel():
 def main():
     print("Start Reading!")
     # dir = 'C:\\Users\FurstOnFire\PycharmProjects\Intent classfication\swda\swda'
-    dir = 'swda\swda'
+    dir = 'swda\data'
 
     X, Y, _, _, _, _ = load_swda_corpus_data(swda_directory=dir)
     X = preprocess(X)
