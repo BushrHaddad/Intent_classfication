@@ -100,7 +100,9 @@ class CorpusReader:
         the `Metadata` object used throughout.
         """
         self.src_dirname = src_dirname
-        metadata_filename = os.path.join(src_dirname, 'swda-metadata.csv')
+        metadata_filename = "./swda/data\swda-metadata.csv"
+            # os.path.join(src_dirname, 'swda-metadata.csv')
+        print(metadata_filename)
         self.metadata = Metadata(metadata_filename)
 
     def iter_transcripts(self, display_progress=True):
